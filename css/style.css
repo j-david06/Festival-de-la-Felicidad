@@ -1,0 +1,182 @@
+/* Estilos generales (MODO NEÓN) */ 
+body { 
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #201030c4; 
+    color: #eeeeee; 
+} 
+/* ======== ESTILOS DEL HEADER ======== */ 
+header { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background-header.jpg'); 
+    background-size: cover; 
+    background-position: center 20%; 
+    background-repeat: no-repeat; 
+    color: white; 
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); 
+    min-height: 60vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 20px; 
+} 
+.header-content h1 { 
+    font-size: 3.5em; 
+    margin-bottom: 10px; 
+} 
+.header-content p { 
+    font-size: 1.2em; 
+} 
+/* ======== ESTILOS DEL NAV ======== */ 
+nav { 
+    background-color: #1a0a2a; 
+    padding: 10px 0; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+} 
+nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: 
+    center; 
+    gap: 20px; 
+} 
+nav ul a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 0.9em; 
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+} 
+nav ul a:hover { 
+    background-color: #00d4ff; 
+    color: #201030;  
+} 
+/* ======== ESTILOS DEL MAIN Y SECTIONS ======== */ 
+main { 
+    padding: 20px; 
+    max-width: 960px; 
+    margin: auto; 
+} 
+section { 
+    background: #302040; 
+    margin-bottom: 20px; 
+    padding: 20px; 
+    border-radius: 8px; 
+    border: 1px solid #00d4ff; 
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.1); 
+} 
+h2 { 
+    color: #e000ff; 
+    text-align: center; 
+    margin-top: 0; 
+} 
+/* Estilos de la galería */ 
+.galeria-container { 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 15px; 
+} 
+.galeria-container img { 
+    width: 100%; 
+    max-width: 300px; 
+    border-radius: 8px; 
+    border: 3px solid #00d4ff; 
+}
+/* Estilos del formulario */ 
+#form-felicidad { 
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+    flex-wrap: wrap; 
+} 
+#form-felicidad input { 
+    flex-grow: 1; 
+    padding: 10px; 
+    border: 1px solid #00d4ff; 
+    background-color: #201030; 
+    color: #eeeeee; 
+    border-radius: 4px; 
+    min-width: 200px; 
+} 
+#form-felicidad button { 
+    padding: 10px 15px; 
+    background: #e000ff; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+#form-felicidad button:hover { 
+    background: #ff40ff; 
+} 
+#lista-momentos { 
+    list-style-type: '😊'; 
+    padding-left: 30px; 
+    text-align: left; 
+    margin-top: 20px; 
+} 
+#lista-momentos li { 
+    padding: 5px 0; 
+} 
+/* Estilos de la evidencia */ 
+.evidencia-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 20px; 
+    text-align: center; 
+} 
+#mi-foto-evidencia { 
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%; 
+    border: 5px solid #ffd700; 
+    background-image: url('../img/Juan-Rivera.jpg'); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: 150%; 
+    transition: background-size 0.3s ease-in-out, box-shadow 0.3s ease; cursor: pointer; 
+} 
+#mi-foto-evidencia:hover { 
+    background-size: 160%; 
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); 
+} 
+/* ======== ESTILOS DEL FOOTER ======== */ 
+footer { 
+    text-align: center; 
+    padding: 20px; 
+    background-color: #1a0a2a; 
+    color: #aaa; 
+    font-size: 0.9em; 
+    border-top: 1px solid #302040; 
+} 
+footer p { 
+    margin: 5px 0; 
+} 
+/* ======== RESPONSIVIDAD ======== */ 
+@media (min-width: 768px) { 
+    .evidencia-container { 
+        flex-direction: row; 
+        text-align: left; 
+    } 
+    header { 
+        min-height: 70vh; 
+    } 
+    .header-content h1 { 
+        font-size: 4.5em; 
+    } 
+    nav ul a { 
+        font-size: 1em; 
+    } 
+}
