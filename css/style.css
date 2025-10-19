@@ -9,7 +9,7 @@ body {
 } 
 /* ======== ESTILOS DEL HEADER ======== */ 
 header { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background-header.jpg'); 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/background-header.JPG'); 
     background-size: cover; 
     background-position: center 20%; 
     background-repeat: no-repeat; 
@@ -179,4 +179,5 @@ footer p {
     nav ul a { 
         font-size: 1em; 
     } 
+
 }
